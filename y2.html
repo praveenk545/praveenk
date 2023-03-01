@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+
+<html xmlns:th="http://www.thymeleaf.org">
+<script src="y3.js"></script>
+   
+<head>
+    <title>Coronavirus Tracker Application</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+</head>
+<link rel="stylesheet" href="y1.css">
+
+<body>
+<div class="container">
+<h1>Coronavirus Tracker Application</h1>
+<p>This application lists the current number of cases reported in Tiruvanamalai</p>
+
+<div class="jumbotron">
+    <h1 class="display-4" th:text="${totalReportedCases}">5700</h1>
+    <p class="lead">Total cases reported as of today</p>
+    <hr class="my-4">
+    <p>
+        <h1 class="display-4" th:text="${totalReportedCases}">4600</h1>
+        <span>New cases reported since previous day:</span>
+        <span th:text="${totalNewCases}"></span>
+    </p>
+
+</div>
+
+
+            
+            <table id="testTable" table class="table"summary="Code page support in different versions of MS Windows." rules="groups" frame="hsides" border="0" height="3" > 
+                
+                <tr>
+                    
+                <th>Place</th>
+                <th>Vacanized</th>
+                <th>Postive</th>
+                <th>Died</th>
+                <th>Total cases reported</th>
+                <th>Changes since last day</th>
+            </tr>
+            <tr th:each="locationStat : ${locationStats}">
+                <td th:href="${locationStat.state}">Thennimalai</td>
+                <td th:text="${locationStat.country}">120</td>
+                <td th:text="${locationStat.country}">19</td>
+                <td th:text="${locationStat.country}">0</td>
+                <td th:text="${locationStat.latestTotalCases}">60</td>
+                <td th:text="${locationStat.diffFromPrevDay}">40</td>
+            </tr>
+            <tr th:each="locationStat : ${locationStats}">
+                <td th:href="${locationStat.state}">Thennimalai</td>
+                <td th:text="${locationStat.country}">120</td>
+                <td th:text="${locationStat.country}">19</td>
+                <td th:text="${locationStat.country}">0</td>
+                <td th:text="${locationStat.latestTotalCases}">60</td>
+                <td th:text="${locationStat.diffFromPrevDay}">40</td>
+            </tr>
+            <tr th:each="locationStat : ${locationStats}">
+                <td th:href="${locationStat.state}">Thennimalai</td>
+                <td th:text="${locationStat.country}">120</td>
+                <td th:text="${locationStat.country}">19</td>
+                <td th:text="${locationStat.country}">0</td>
+                <td th:text="${locationStat.latestTotalCases}">60</td>
+                <td th:text="${locationStat.diffFromPrevDay}">40</td>
+            </tr>
+            <tr th:each="locationStat : ${locationStats}">
+                <td th:href="${locationStat.state}">Thennimalai</td>
+                <td th:text="${locationStat.country}">120</td>
+                <td th:text="${locationStat.country}">19</td>
+                <td th:text="${locationStat.country}">0</td>
+                <td th:text="${locationStat.latestTotalCases}">60</td>
+                <td th:text="${locationStat.diffFromPrevDay}">40</td>
+            </tr>
+            <tr th:each="locationStat : ${locationStats}">
+                <td th:href="${locationStat.state}">Thennimalai</td>
+                <td th:text="${locationStat.country}">120</td>
+                <td th:text="${locationStat.country}">19</td>
+                <td th:text="${locationStat.country}">0</td>
+                <td th:text="${locationStat.latestTotalCases}">60</td>
+                <td th:text="${locationStat.diffFromPrevDay}">40</td>
+            </tr>
+            <tr th:each="locationStat : ${locationStats}">
+                <td th:href="${locationStat.state}">Thennimalai</td>
+                <td th:text="${locationStat.country}">120</td>
+                <td th:text="${locationStat.country}">19</td>
+                <td th:text="${locationStat.country}">0</td>
+                <td th:text="${locationStat.latestTotalCases}">60</td>
+                <td th:text="${locationStat.diffFromPrevDay}">40</td>
+            </tr>
+            <tr th:each="locationStat : ${locationStats}">
+                <td th:href="${locationStat.state}">Thennimalai</td>
+                <td th:text="${locationStat.country}">120</td>
+                <td th:text="${locationStat.country}">19</td>
+                <td th:text="${locationStat.country}">0</td>
+                <td th:text="${locationStat.latestTotalCases}">60</td>
+                <td th:text="${locationStat.diffFromPrevDay}">40</td>
+            </tr>
+            <tr th:each="locationStat : ${locationStats}">
+                <td th:href="${locationStat.state}">Thennimalai</td>
+                <td th:text="${locationStat.country}">120</td>
+                <td th:text="${locationStat.country}">19</td>
+                <td th:text="${locationStat.country}">0</td>
+                <td th:text="${locationStat.latestTotalCases}">60</td>
+                <td th:text="${locationStat.diffFromPrevDay}">40</td>
+            </tr>
+            <tr th:each="locationStat : ${locationStats}">
+                <td th:href="${locationStat.state}">Thennimalai</td>
+                <td th:text="${locationStat.country}">120</td>
+                <td th:text="${locationStat.country}">19</td>
+                <td th:text="${locationStat.country}">0</td>
+                <td th:text="${locationStat.latestTotalCases}">60</td>
+                <td th:text="${locationStat.diffFromPrevDay}">40</td>
+            </tr>
+            <tr th:each="locationStat : ${locationStats}">
+                <td th:href="${locationStat.state}">Thennimalai</td>
+                <td th:text="${locationStat.country}">120</td>
+                <td th:text="${locationStat.country}">19</td>
+                <td th:text="${locationStat.country}">0</td>
+                <td th:text="${locationStat.latestTotalCases}">60</td>
+                <td th:text="${locationStat.diffFromPrevDay}">40</td>
+            </tr>
+        </table>
+            
+        </div>
+
+        
+            <div class="container">
+                <table class="table table-bordered table-striped">
+              <input type="button" class="btn btn-success" onclick="tableToExcel('testTable', 'W3C Example Table')" value="Export to Excel">
+               <li><a href="E:\New folder\chart\cpare.html">PREDICT LEVEL</a></li>
+               
+               
+        
+        <tr>
+        </tr>
+    </table>
+</div>
+
+
+</body>
+
+</html>

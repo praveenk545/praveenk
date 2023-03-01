@@ -1,0 +1,48 @@
+<html>
+    <head>
+        <title> Chart</title>
+       <center> <head>CORONA-VIRUS</head>
+        <small>Cases, Deaths, and Recovered: 2020-2025</small></center>
+        <link rel="stylesheet" href="cpare.css">
+        <script src=""></script>
+
+    </head>
+    <body>
+      
+    </body>
+</html>
+<html>
+  <head>
+    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+    <script type="text/javascript">
+      google.charts.load('current', {'packages':['bar']});
+      google.charts.setOnLoadCallback(drawChart);
+
+      function drawChart() {
+        var data = google.visualization.arrayToDataTable([
+          ['YEAR', 'CASES', 'DEATHS', 'NEGATIVE','VACCINIZED'],
+          ['2020', 10000, 2000, 200, 300],
+          ['2021', 6000, 1500, 250,400],
+          ['2022', 1000, 80, 300,400],
+          ['2023', 100, 18, 350,500],
+          ['2024', 40, 8, 350,600],
+          ['2025', 10, 1, 350,700],
+        ]);
+
+        var options = {
+          chart: {
+            title: '',
+            subtitle: '',
+          }
+        };
+
+        var chart = new google.charts.Bar(document.getElementById('columnchart_material'));
+
+        chart.draw(data, google.charts.Bar.convertOptions(options));
+      }
+    </script>
+  </head>
+  <body>
+    <div id="columnchart_material" style="width: 1330px; height: 600px;"></div>
+  </body>
+</html>
