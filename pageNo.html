@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>pageNo</title>
+    <link rel="stylesheet" href="pageNo.css">
+</head>
+<body>
+
+    <div class="container">
+        <div class="pagination">
+            <button class="btn1" onclick="backbtn()"><img src="E:\js p\images\arrow.png">Prev</button>
+            <ul>
+                <li class="link active" value="1" onclick="activelink()">1</li>
+                <li class="link" value="2"  onclick="activelink()">2</li>
+                <li class="link" value="3" onclick="activelink()">3</li>
+                <li class="link" value="4" onclick="activelink()">4</li>
+                <li class="link" value="5" onclick="activelink()">5</li>
+                <li class="link" value="6" onclick="activelink()" >6</li>
+            </ul>
+            <button class="btn2" onclick="nextbtn()">Next<img src="E:\js p\images\arrow.png"></button>
+        </div>
+    </div>
+
+
+    <script>
+        let link=document.getElementsByClassName("link");
+
+        let currentValue=1;
+
+        function activelink(){
+            for(l of link){
+               l.classlist.remove("active");
+
+            }
+            event.target.classlist.add("active");
+            currentValue=event.target.value;
+        }
+        function backbtn(){
+            if(currentValue > 1){
+                for(l of link){
+                    l.classlist.remove("active");
+                }
+                currentValue--;
+                link[currentValue-1].classlist.add("active");
+                
+            }
+        }
+
+        function nextbtn(){
+            if(currentValue > 6){
+                for(l of link){
+                    l.classlist.remove("active");
+                }
+                currentValue++;
+                link[currentValue-1].classlist.add("active");
+                
+            }
+        }
+    </script>
+
+
+</body>
+</html>
