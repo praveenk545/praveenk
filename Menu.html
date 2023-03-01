@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MenuBar</title>
+    <link rel="stylesheet" href="Menu.css" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+</head>
+<body>
+    <div class="navigation">
+        <div class="menuToggle"></div>
+        <ul>
+            <li class="list active" style="--clr:#fa2e20;">
+                <a href="#">
+                    <span class="icon">
+                    <ion-icon name="home-outline"></ion-icon></span>
+                    <span class="text">Home</span>
+                </a>
+            </li>
+
+            <li class="list" style="--clr:#1bffb3;">
+                <a href="#">
+                    <span class="icon">
+                    <ion-icon name="person-outline"></ion-icon></span>
+                    <span class="text">about</span>
+                </a>
+            </li>
+
+            <li class="list" style="--clr:#2fff2f;">
+                <a href="#">
+                    <span class="icon">
+                    <ion-icon name="chatbubble-outline"></ion-icon></span>
+                    <span class="text">Messages</span>
+                </a>
+            </li>
+
+            <li class="list" style="--clr:#3c49ff;">
+                <a href="#">
+                    <span class="icon">
+                    <ion-icon name="camera-outline"></ion-icon></span>
+                    <span class="text">Phots</span>
+                </a>
+            </li>
+
+            <li class="list" style="--clr:#fa20dd;">
+                <a href="#">
+                    <span class="icon">
+                    <ion-icon name="settings-outline"></ion-icon></span>
+                    <span class="text">settings</span>
+                </a>
+            </li>
+
+   
+        </ul>
+    </div>
+
+
+
+
+
+
+
+<script>
+    const menuToggle = document.querySelector('.menuToggle');
+    const navigation = document.querySelector('.navigation');
+    menuToggle.onclick = function(){
+        navigation.classList.toggle('open')
+    }
+
+    const list = document.querySelectorAll('.list');
+    function activelink(){
+        list.forEach((item) =>
+        item.classList.remove('active'));
+        this.classList.add('active');
+
+    }
+    list.forEach((item) =>
+    item.addEventListener('click', activelink));
+</script>
+
+
+
+
+<script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    
+</body>
+</html>
